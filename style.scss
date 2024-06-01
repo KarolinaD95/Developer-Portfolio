@@ -135,6 +135,42 @@ body {
     border-radius: 10px;
     }
 }
+// Background
+.background {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    color: #333;
+    line-height: 1.5;
+    height: 100vh;
+    overflow: hidden;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(45deg, #bb9ada, #935b88a2, #731dc391, #ff9ae4);
+        background-size: 200% 200%;
+        animation: gradient 10s ease infinite;
+        z-index: -1;
+    }
+}
+
+// Title
+.title-style{
+    font-size: 4em;
+    font-family: $secondary-font;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+    animation: glitch 2s infinite;
+}
 
 // Navbar
 .navbar {
@@ -184,29 +220,7 @@ body {
 }
 
 // Intro section
-.first-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 20px;
-    text-align: center;
-    color: #333;
-    line-height: 1.5;
-    height: 100vh;
-    overflow: hidden;
-    &::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(45deg, #bb9ada, #935b88a2, #731dc391, #ff9ae4);
-        background-size: 200% 200%;
-        animation: gradient 10s ease infinite;
-        z-index: -1;
-    }
+#first-section {
     .intro-content {
         display: flex;
         align-items: center;
@@ -235,7 +249,7 @@ body {
         }
         .profile-pic-container {
             position: relative;
-            width: 400px;
+            width: 500px;
             height: 400px;
             overflow: hidden;
             border-radius: 30%;
@@ -281,42 +295,10 @@ body {
 }
 
 // About me section
-
 #about-me-section {
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: #333;
-    line-height: 1.5;
-    padding: 20px 40px;
-    height: 100vh;
-    overflow: hidden;
-    &::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(45deg, #bb9ada, #935b88a2, #731dc391, #ff9ae4);
-        background-size: 200% 200%;
-        animation: gradient 10s ease infinite;
-        z-index: -1;
-    }
-    .about-me-title {
-        font-size: 4em;
-        font-family: $secondary-font;
-        font-weight: 700;
-        text-align: center;
-        margin-bottom: 20px;
-        animation: glitch 2s infinite;
-    }
     .about-me-text {
         display: grid;
-        grid-template-columns: 1.5fr 1.8fr;
+        grid-template-columns: 1.5fr 1.5fr;
         align-items: center;
         gap: 70px;
         .left-column {
@@ -349,7 +331,7 @@ body {
                 border: double 3px transparent;
                 border-image-slice: 1;
                 border-width: 3px;
-                background-image: linear-gradient(#1a1a1a, #1a1a1a), radial-gradient(circle at top left, #51a2e9, #ff4d5a);
+                background-image: linear-gradient(#82199f, #baaac350), radial-gradient(circle at top left, #51a2e9, #ff4d5a);
                 border-radius: 10px;
                 background-origin: border-box;
                 background-clip: content-box, border-box;
@@ -368,17 +350,54 @@ body {
     }
 }
 
-// Skills section
+// Experience section
 
 // Projects section
 
 // Contact section
+#contact-section {
+    .form-style {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        .label {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            text-align: left;
+            margin-bottom: 5px;
+        }
+        input {
+            border-radius: 5px;
+            margin-bottom: 6px;
+            padding: 1rem;
+            height: 3rem;
+            width: 30rem;
+        }
+        textarea {
+            border-radius: 5px;
+            width: 30rem;
+            height: 7rem;
+            resize: none;
+            color: inherit;
+            font-size: 1rem;
+            font-family: $main-font;
+            border-width: 2px;
+            border-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+            margin-bottom: 30px;
+        }
+        .submit-button {
+            margin: 5px;
+            width: fit-content;
+        }
+    }
+}
 
 // Footer
 .footer {
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
     background-color: rgba(149, 106, 170, 0.557);
     height: 60px;
     padding: 20px;
@@ -424,22 +443,22 @@ body {
 }
 @keyframes glitch {
     0% {
-        text-shadow: 2px 2px #ff00c1, -2px -2px #00ffea;
+        text-shadow: 2px 2px #ff00c1, -2px -2px #82199f;
     }
     20% {
-        text-shadow: -2px -2px #ff00c1, 2px 2px #00ffea;
+        text-shadow: -2px -2px #ff00c1, 2px 2px #82199f;
     }
     40% {
-        text-shadow: 2px -2px #ff00c1, -2px 2px #00ffea;
+        text-shadow: 2px -2px #ff00c1, -2px 2px #82199f;
     }
     60% {
-        text-shadow: -2px 2px #ff00c1, 2px -2px #00ffea;
+        text-shadow: -2px 2px #ff00c1, 2px -2px #82199f;
     }
     80% {
-        text-shadow: 2px 2px #ff00c1, -2px -2px #00ffea;
+        text-shadow: 2px 2px #ff00c1, -2px -2px #82199f;
     }
     100% {
-        text-shadow: -2px -2px #ff00c1, 2px 2px #00ffea;
+        text-shadow: -2px -2px #ff00c1, 2px 2px #82199f;
     }
 }
 @keyframes border-animation {

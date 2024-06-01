@@ -23,14 +23,14 @@
                     <div class="menu">
                         <ul class="navbar-menu">
                             <li><a href="#about-me-section">About Me</a></li>
-                            <li><a href="#skills-section">Skills</a></li>
+                            <li><a href="#experience-section">Experience</a></li>
                             <li><a href="#projects-section">Projects</a></li>
                             <li><a href="#contact-section">Contact me</a></li>
                         </ul>
                     </div>
                 </nav>
             </header>
-            <section class="first-section" id="landing-section">
+            <section id="first-section" class="background">
                 <div class="intro-content">
                     <div>
                         <span style="display: inline-flex;align-items: center; font-size: 16px;">
@@ -50,15 +50,15 @@
                 </div>
                 <a href="#about-me-section" class="see-more-button"><i class="fa-solid fa-angles-down"></i></a>
             </section>
-            <section id="about-me-section">
-                <p class="about-me-title">About me</p>
+            <section id="about-me-section" class="background">
+                <p class="about-me-title title-style">About me</p>
                 <article class="about-me-text">
                     <div class="left-column">
                         <img src="profile-pic.jpeg" alt="Karolina profile picture" class="me-photo">
                         <h2 style="margin-bottom: 10px;">Frontend Developer with a great business understanding and passion for sustanability.</h2>
                         <p style="text-align: justify;"> I have 3 years of development experience - mainly focused around frontend technologies. 
                         Having worked in SCRUM teams, I understand the importance of delivering business value through developing user-centric solutions. I am familiar with design principles, and have worked with Figma to create wireframes and working prototypes.
-                        I have master's degree in Digital Business. My thesis has focused on sustainability and how machine learning techniques can be used to drive companies towards more conscious future.
+                        I have a master's degree in Digital Business. My thesis has focused on sustainability and how machine learning techniques can be used to drive companies towards more conscious future.
                         My passion for sustainable progress is a driving force in my career. I firmly believe that technology can be a catalyst for positive change.</p>
                     </div>
                     <div class="tech-icons">
@@ -119,10 +119,36 @@
                     </div>
                 </article>
             </section>
-
-            <section id="skills-section"></section>
-            <section id="projects-section"></section>
-            <section id="contact-section"></section>
+            <section id="experience-section" class="background">
+                <h3 class="experience-title title-style">Experience</h3>
+                <p>This section is coming soon.</p>
+                <p>In the meantime, contact me or check out my github or Linkedin for more info.</p>
+            </section>
+            <section id="projects-section" class="background">
+                <h3 class="projects-title title-style">Projects</h3>
+                <p>This section is coming soon.</p>
+                <p>In the meantime, contact me or check out my github or Linkedin for more info.</p>
+            </section>
+            <section id="contact-section" class="background">
+                <form action="https://formspree.io/f/mrgnwpwe" method="POST">
+                    <div class="form-style">
+                        <h3 class="contact-me-title title-style">Contact me</h3>
+                        <div class="label">
+                            <label for="name">Name</label>
+                            <input type="text" name="name" placeholder="Name">
+                        </div>
+                        <div class="label">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" placeholder="Email">
+                        </div>
+                        <div class="label">
+                            <label for="message">Message</label>
+                            <textarea name="message" placeholder="Write your Message" minlength="1"></textarea>
+                        </div>
+                        <button type="submit" class="submit-button extra-button">Send message</button>
+                    </div>
+                </form>
+            </section>
         </main>
         <footer class="footer">
             <p class="text-left">&copy; 2024 Karolina Dabrowska. All Rights Reserved.</p>
