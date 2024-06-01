@@ -404,6 +404,21 @@ body {
     position: relative;
     bottom: 0;
     width: 100%;
+    .to-top {
+        position: absolute;
+        top: -25px;
+        width: 40px;
+        height: 45px;
+        margin: auto;
+        left: 0;
+        right: 0;
+        font-size: 50px;
+        color: #000;
+        cursor: pointer;
+        &:hover{
+            animation: bounce 2s infinite;
+        }
+    }
     .text-left {
         margin-left: 20px;
         font-size: 0.8em;

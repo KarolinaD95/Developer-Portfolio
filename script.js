@@ -39,3 +39,11 @@ function switchPlaces() {
 }
 
 setInterval(switchPlaces, 5000); 
+
+// Scroll to top
+document.querySelector('.to-top').addEventListener('click', function() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
