@@ -379,13 +379,11 @@ body {
             border-radius: 5px;
             width: 30rem;
             height: 7rem;
-            resize: none;
-            color: inherit;
-            font-size: 1rem;
             font-family: $main-font;
             border-width: 2px;
             border-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
             margin-bottom: 30px;
+            padding: 1rem;
         }
         .submit-button {
             margin: 5px;
